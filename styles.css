@@ -1,0 +1,13 @@
+.inputDiv{
+    text-align: center;
+}
+.titulo{
+    color: #fff;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    height: 100%;
+    background-color: #111;
+    box-sizing: border-box;
+}
