@@ -37,6 +37,16 @@ function addItem(){
     div.appendChild(paragraph);
     paragraph.innerText = textoFormulario;
 
+    var buttonDelete = document.createElement("button");
+    buttonDelete.innerHTML = "Eliminar";
+    buttonDelete.setAttribute('id', 'boton-eliminar-'+cont);
+    buttonDelete.addEventListener('click', () => this.deleteItem(cont-1));
+    div.appendChild(buttonDelete);
+
     var container = document.querySelector(".Container");
     container.appendChild(div);
+}
+
+function deleteItem(id){
+    localStorage.removeItem('tarea-'+id);
 }
